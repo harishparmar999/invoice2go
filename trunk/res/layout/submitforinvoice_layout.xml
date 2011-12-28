@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Job Name:" 
+	android:id="@+id/SubmitJobName"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+></TextView>
+
+<Spinner 
+	android:id="@+id/SubmitJobNameSpinner" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignTop="@+id/TextView01"
+	android:layout_toRightOf="@id/SubmitJobName"
+></Spinner>
+
+<Button 
+	android:text="Send Report" 
+	android:id="@+id/SendReport" 
+	android:layout_width="150sp"
+	android:layout_height="wrap_content"
+	android:textSize="20sp"
+	android:clickable="true"
+	android:layout_below="@+id/SubmitJobName"
+></Button>
+
+</RelativeLayout>
+
+</ScrollView>

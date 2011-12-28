@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:focusable="true"
+       android:focusableInTouchMode="true"
+>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Customer:" 
+	android:id="@+id/Customer"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:layout_below="@+id/NewJob"
+	android:gravity="center"
+></TextView>
+
+<Spinner 
+	android:id="@+id/JobSiteCustomerSpinner"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:prompt="@string/AddCustomerName"
+	android:layout_alignTop="@+id/TextView01"
+	android:layout_toRightOf="@+id/Customer"
+></Spinner>
+
+<TextView 
+	android:padding="2sp"
+	android:textSize="15sp"
+	android:text="Job Site:" 
+	android:id="@+id/JobSite"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+	android:layout_below="@+id/Customer"
+></TextView>
+
+<EditText 
+	android:textSize="15sp" 
+	android:id="@+id/NewJobSite"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:hint="New Job Site...."
+	android:layout_alignTop="@+id/JobSite"
+	android:layout_toRightOf="@+id/JobSite"
+></EditText>
+
+<TextView 
+	android:padding="2sp"
+	android:textSize="15sp"
+	android:text="Address:" 
+	android:id="@+id/JobSiteAddress"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+	android:layout_below="@+id/NewJobSite"
+></TextView>
+
+<EditText 
+	android:textSize="15sp" 
+	android:id="@+id/NewJobSiteAddress"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:hint="Job Site Adress...."
+	android:layout_alignTop="@+id/JobSiteAddress"
+	android:layout_toRightOf="@+id/JobSiteAddress"
+></EditText>
+
+<Button
+	android:id="@+id/SaveJobSite"
+	android:layout_width="150sp"
+	android:layout_height="wrap_content"
+	android:text="Save"
+	android:textSize="20sp"
+	android:layout_below="@+id/NewJobSiteAddress"
+></Button>
+
+<Button
+	android:id="@+id/CancelJobsite"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Cancel"
+	android:textSize="20sp"
+	android:layout_alignTop="@+id/SaveJobSite"
+	android:layout_toRightOf="@+id/SaveJobSite"
+></Button>
+
+</RelativeLayout>
+
+</ScrollView>

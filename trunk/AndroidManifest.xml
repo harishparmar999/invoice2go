@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.billing"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:persistent="false">
+        <activity android:label="@string/app_name" android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    
+<activity android:name=".ManageJobs" android:label="Manage Job"></activity>
+<activity android:name=".ReportLabor" android:label="Report Labor"></activity>
+<activity android:name=".LaborHistory" android:label="Labor History"></activity>
+<activity android:name=".SubmitForInvoice" android:label="Submit For Invoice"></activity>
+
+<activity android:enabled="true" android:name=".CreateAJob" android:label="Create A Job"></activity>
+<activity android:name=".Settings" android:label="Settings"></activity>
+<activity android:label="Add Job Site" android:name=".AddJobSite"></activity>
+<activity android:label="Add Customer" android:name=".AddCustomer"></activity>
+</application>
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest> 

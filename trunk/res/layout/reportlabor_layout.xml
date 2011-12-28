@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+
+<TextView 
+	android:padding="7sp" 
+	android:textSize="20sp"
+	android:text="Job:" 
+	android:id="@+id/TextView01"
+	android:layout_width="50sp"
+	android:layout_height="43sp"
+></TextView> 
+  
+<Spinner 
+	android:layout_width="fill_parent"
+	android:id="@+id/ReportLaborJobNameSpinner"
+	android:layout_height="wrap_content"
+	android:layout_toRightOf="@+id/TextView01"
+></Spinner>
+
+<TextView 
+	android:padding="3sp" 
+	android:textSize="15sp"
+	android:text="Date:" 
+	android:id="@+id/TextView02"
+	android:layout_width="50sp"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/TextView01"
+></TextView>
+
+<DatePicker 
+	android:id="@+id/ReportLaborDatePicker" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_alignTop="@+id/TextView02"
+	android:layout_toRightOf="@+id/TextView02"
+></DatePicker>
+
+<TextView 
+	android:padding="5sp" 
+	android:textSize="15sp"
+	android:text="Start Time:" 
+	android:id="@+id/TextView03"
+	android:layout_width="50sp"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/ReportLaborDatePicker"
+></TextView>
+
+<Button
+	android:padding="5sp" 
+	android:textSize="30sp"
+	android:text="Start Time..." 
+	android:id="@+id/ReportLaborStartTime"
+	android:layout_width="200sp"
+	android:layout_height="wrap_content"
+	android:layout_alignTop="@+id/TextView03"
+	android:layout_toRightOf="@+id/TextView03"
+	android:clickable="true"
+	android:onClick="onViewClickHandler"
+></Button>
+
+<TextView 
+	android:padding="5sp" 
+	android:textSize="15sp"
+	android:text="End Time:" 
+	android:id="@+id/TextView04"
+	android:layout_width="50sp"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/TextView03"
+></TextView>
+
+<Button 
+	android:id="@+id/ReportLaborEndTime"
+	android:padding="5sp" 
+	android:textSize="30sp"
+	android:text="End Time...."
+	android:layout_width="200sp"
+	android:layout_height="wrap_content"
+	android:layout_alignTop="@+id/TextView04"
+	android:layout_toRightOf="@+id/TextView04"
+	android:clickable="true"
+	android:onClick="onViewClickHandler"
+></Button>
+
+
+
+<EditText
+	android:id="@+id/ReportLaborNotes"
+	android:textSize="15sp" 
+	android:hint=""
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:layout_below="@+id/TextView04"
+></EditText>
+
+<Button 
+	android:text="Save" 
+	android:id="@+id/ReportLaborButton" 
+	android:layout_width="150sp"
+	android:layout_height="wrap_content"
+	android:textSize="20sp"
+	android:layout_below="@+id/ReportLaborNotes"
+></Button>
+
+<Button
+	android:id="@+id/CancelReportLabor"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Cancel"
+	android:textSize="20sp"
+	android:layout_alignTop="@+id/ReportLaborButton"
+	android:layout_toRightOf="@+id/ReportLaborButton"
+></Button>
+
+</RelativeLayout>
+</ScrollView>

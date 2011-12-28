@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Invoice 2 Go</string>
+<string name="jobslabel">Jobs Menu</string>
+<dimen name="mainmenutextsize">30sp</dimen>
+<string name="About">About</string>
+<string name="Version">Version 1.1a</string>
+<color name="MainTextColor">#ffffff</color>
+<color name="MainLineColor">#ffffff</color>
+<color name="MainBackgroundColor">#000000</color>
+<string name="AddCustomerName">Customer Name</string>
+<string name="AddJobSite">Add Job Site</string>
+
+<string-array name="customer_array">
+	<item> Add a Customer</item>
+	<item>Customer 1</item>
+    <item>Customer 2</item>
+    <item>Customer 3</item>
+    <item>Customer 4</item>
+    <item>Customer 5</item>
+</string-array>
+
+<string-array name="jobsite_array">
+	<item> Add a Job Site</item>
+	<item>Job Site 1</item>
+    <item>Job Site 2</item>
+    <item>Job Site 3</item>
+    <item>Job Site 4</item>
+    <item>Job Site 5</item>
+</string-array>
+
+</resources>
