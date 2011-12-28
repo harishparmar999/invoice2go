@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:focusable="true"
+       android:focusableInTouchMode="true"
+>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Customer:" 
+	android:id="@+id/Customer"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+></TextView>
+
+<EditText 
+	android:textSize="15sp" 
+	android:id="@+id/NewCustomerName"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:hint="Customer Name...."
+	android:layout_toRightOf="@+id/Customer"
+></EditText>
+
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Address:" 
+	android:id="@+id/Address"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+	android:layout_below="@+id/Customer"
+></TextView>
+
+<EditText 
+	android:textSize="15sp" 
+	android:id="@+id/NewAddress"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:hint="Customer Address...."
+	android:layout_alignTop="@+id/Address"
+	android:layout_toRightOf="@+id/Address"
+	
+></EditText>
+
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Phone #:" 
+	android:id="@+id/Phone"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+	android:layout_below="@+id/Address"
+></TextView>
+
+<EditText 
+	android:textSize="15sp" 
+	android:id="@+id/NewPhoneNumber"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:hint="Customer Phone Number...."
+	android:layout_alignTop="@+id/Phone"
+	android:layout_toRightOf="@+id/Phone"
+></EditText>
+
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Email:" 
+	android:id="@+id/Email"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+	android:layout_below="@+id/Phone"
+></TextView>
+
+<EditText 
+	android:textSize="15sp" 
+	android:id="@+id/NewEmailAddress"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:hint="Customer Email Address...."
+	android:layout_alignTop="@+id/Email"
+	android:layout_toRightOf="@+id/Email"
+></EditText>
+
+<Button
+	android:id="@+id/SaveCustomer"
+	android:layout_width="150sp"
+	android:layout_height="wrap_content"
+	android:text="Save"
+	android:textSize="20sp"
+	android:layout_below="@+id/Email"
+></Button>
+
+<Button
+	android:id="@+id/CancelCustomer"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Cancel"
+	android:textSize="20sp"
+	android:layout_alignTop="@+id/SaveCustomer"
+	android:layout_toRightOf="@+id/SaveCustomer"
+></Button>
+
+</RelativeLayout>
+
+</ScrollView>

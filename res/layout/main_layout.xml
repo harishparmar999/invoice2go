@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollViewLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+>
+
+<TableLayout 
+	android:id="@+id/TableLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:background="@color/MainBackgroundColor"
+>
+
+<TableRow>
+<TextView 
+	android:id="@+id/CreateAJob" 
+	android:text="Create A Job" 
+	android:textSize="@dimen/mainmenutextsize" 
+	android:textColor="@color/MainTextColor"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:padding="4pt"
+	android:clickable="true"
+	android:onClick="onViewClickHandler" 
+></TextView>
+</TableRow>
+
+<View
+	android:layout_height="1sp"
+	android:background="@color/MainLineColor"
+></View>
+
+<TableRow>
+<TextView 
+	android:id="@+id/ManageJob" 
+	android:text="Manage Job" 
+	android:textSize="@dimen/mainmenutextsize" 
+	android:textColor="@color/MainTextColor"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:padding="4pt"
+	android:clickable="true"
+	android:onClick="onViewClickHandler" 
+></TextView>
+</TableRow>
+
+<View
+	android:layout_height="1sp"
+	android:background="@color/MainLineColor"
+></View>
+
+<TableRow>
+<TextView 
+	android:id="@+id/ReportLabor" 
+	android:text="Report Labor" 
+	android:textSize="@dimen/mainmenutextsize" 
+	android:textColor="@color/MainTextColor"
+	android:fadingEdge="horizontal"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:padding="4pt" 
+	android:shadowColor="#bebebe"
+	android:clickable="true"
+	android:onClick="onViewClickHandler" 
+></TextView>
+</TableRow>
+
+<View
+	android:layout_height="1dip"
+	android:background="@color/MainLineColor"
+></View>
+
+<TableRow>
+<TextView 
+	android:id="@+id/LaborHistory" 
+	android:text="Labor History" 
+	android:textSize="@dimen/mainmenutextsize" 
+	android:textColor="@color/MainTextColor"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:padding="4pt"
+	android:clickable="true"
+	android:onClick="onViewClickHandler" 
+></TextView>
+</TableRow>
+
+<View
+	android:layout_height="1dip"
+	android:background="@color/MainLineColor"
+></View>
+
+<TableRow>
+<TextView 
+	android:id="@+id/SubmitForInvoice" 
+	android:text="Submit For Invoice" 
+	android:textSize="@dimen/mainmenutextsize" 
+	android:textColor="@color/MainTextColor"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:padding="4pt"
+	android:clickable="true"
+	android:onClick="onViewClickHandler" 
+></TextView>
+</TableRow>
+
+<!--<View
+	android:layout_height="1dip"
+	android:background="@color/MainLineColor"
+></View>
+
+<TableRow>
+<TextView 
+	android:id="@+id/Settings" 
+	android:text="Settings" 
+	android:textSize="@dimen/mainmenutextsize" 
+	android:textColor="@color/MainTextColor"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:padding="4pt"
+	android:clickable="true"
+	android:onClick="onViewClickHandler" 
+></TextView>
+</TableRow>-->
+
+</TableLayout>
+
+</ScrollView>

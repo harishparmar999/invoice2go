@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<item android:title="Create a Job" android:orderInCategory="1" android:enabled="true" android:visible="true" android:id="@+id/createajob"></item><item android:titleCondensed="Quit" android:title="Quit" android:orderInCategory="2" android:enabled="true" android:visible="true" android:id="@+id/mainquit"></item>
+<item android:titleCondensed="More" android:title="More" android:orderInCategory="3" android:enabled="true" android:visible="true" android:id="@+id/mainmore"><menu><item android:title="Some More What" android:orderInCategory="1" android:id="@+id/item04" android:visible="true" android:enabled="true" android:titleCondensed="SMW"></item>
+<item android:title="Doh" android:orderInCategory="2" android:id="@+id/item05" android:visible="true" android:enabled="true" android:titleCondensed="Doh"></item>
+</menu>
+</item>
+<item android:enabled="true" android:title="About" android:visible="true" android:titleCondensed="About" android:orderInCategory="4" android:id="@+id/About"></item>
+</menu>

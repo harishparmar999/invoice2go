@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:focusable="true"
+       android:focusableInTouchMode="true"
+>
+
+<RelativeLayout
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+>
+
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Job Name:" 
+	android:id="@+id/LaborHistoryJobName"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:gravity="center"
+></TextView>
+
+<Spinner 
+	android:id="@+id/LaborHistoryJobNameSpinner" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignTop="@+id/TextView01"
+	android:layout_toRightOf="@id/LaborHistoryJobName"
+></Spinner>
+
+<TextView 
+	android:padding="2sp" 
+	android:textSize="15sp"
+	android:text="Date: " 
+	android:id="@+id/LaborHistoryDate"
+	android:layout_width="82sp"
+	android:layout_height="43sp"
+	android:layout_below="@id/LaborHistoryJobName"
+	android:gravity="center"
+></TextView>
+
+<Spinner 
+	android:id="@+id/LaboryHistoryDateSpinner" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignTop="@id/LaborHistoryDate"
+	android:layout_toRightOf="@id/LaborHistoryDate"
+></Spinner>
+
+<TextView
+	android:id="@+id/LaborHistoryCustomer"
+	android:padding="2sp"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_below="@id/LaborHistoryDate"
+	android:layout_alignRight="@id/LaboryHistoryDateSpinner" 
+	android:textSize="15sp"
+	android:text="Customer:"
+	android:gravity="center"
+></TextView>
+
+</RelativeLayout>
+
+</ScrollView>
